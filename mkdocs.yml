@@ -1,7 +1,16 @@
-site_name: Docs as Code
+site_name: Классификатор обращений
 
 theme:
   name: readthedocs
 
 plugins:
   - search
+  - mermaid2:
+      version: 10.0.2
+
+nav:
+  - Главная: index.md
+  - Проект:
+      - Описание: project/overview.md
+      - Требования: project/requirements.md
+      - Диаграммы: project/diagrams.md
